@@ -3,9 +3,9 @@
 een project dat ik en mijn groepje moesten doen voor school
 
 ## algemene Informatie:
-We hebben voor de Codetaal C# gekozen samen met MySQL(phpmyadmin) als Database voor deze OOP opdracht:
+We hebben voor de Codetaal C# gekozen voor deze OOP opdracht:
 
-[![Icons:](https://skillicons.dev/icons?i=cs,mysql&theme=light&perline=4)]()
+[![Icons:](https://skillicons.dev/icons?i=cs&theme=light&perline=4)]()
 
 
 We hebben Figma gebruikt voor de WireFrames:
