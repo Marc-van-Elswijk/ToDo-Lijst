@@ -1,0 +1,12 @@
+/**/bin
+/**/obj
+/**/PublishProfiles
+/**/.vs
+
+*.env
+*.user
+.DS_Store
+
+.editorconfig
+.idea/
+.idea/**/**
