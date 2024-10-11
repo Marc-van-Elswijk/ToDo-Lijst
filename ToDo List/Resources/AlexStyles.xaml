@@ -1,0 +1,117 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Default Text Styles -->
+    <Style TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="FontFamily" Value="Ariel" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="Ariel" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="#202020" />
+        <Setter Property="BorderBrush" Value="#333333" />
+    </Style>
+
+    <!-- Custom Text Styles -->
+    <Style x:Key="BigTextBox" TargetType="TextBox">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="#202020" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="AcceptsReturn" Value="True" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+
+    <!-- Custom Control Styles -->
+    <Style x:Key="RedOutlineButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial Rounded MT" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="Red" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Red" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="Red" BorderThickness="3" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="Red" />
+                <Setter Property="Foreground" Value="White" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CyanButtonRoundedHover" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderThickness" Value="3" />
+        <Setter Property="BorderBrush" Value="DarkCyan" />
+        <Setter Property="FontFamily" Value="Ariel" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="DarkCyan" BorderThickness="3" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="DarkCyan" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Custom Text Styles -->
+    <Style x:Key="TaskCreateTitleLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="Ariel" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+
+    <!-- Custom Container Styles -->
+    <Style x:Key="LightBorderHeader" TargetType="Border">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Background" Value="#1a1a1a" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+
+    <Style x:Key="RoundedLightBorderBackground" TargetType="Border">
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="Background" Value="#1a1a1a" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+
+    <Style x:Key="RoundedLightBorderLighterBackground" TargetType="Border">
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="Background" Value="#202020" />
+        <Setter Property="BorderBrush" Value="#333333" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style x:Key="BoardDataTemplateBackground" TargetType="Border">
+        <Setter Property="CornerRadius" Value="20, 20, 0, 0" />
+        <Setter Property="Margin" Value="0, 0, 50, 0" />
+        <Setter Property="Background" Value="#222222" />
+    </Style>
+</ResourceDictionary>
